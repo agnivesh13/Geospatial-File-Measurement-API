@@ -1,0 +1,13 @@
+[project]
+name = "geospatial-file-measurement-api"
+version = "1.0.0"
+description = "Upload a KML or zipped Shapefile and get the area or length of every feature in metres."
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = [
+    # Tests deliberately write shapefiles without a CRS (.prj) to exercise that case.
+    "ignore:'crs' was not provided:UserWarning",
+]

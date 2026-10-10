@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+*.db
+.env
+# The assignment brief belongs to AEREO, so keep it out of the public repository.
+*.docx
+# Personal study notes.
+INTERVIEW_PREP.md
